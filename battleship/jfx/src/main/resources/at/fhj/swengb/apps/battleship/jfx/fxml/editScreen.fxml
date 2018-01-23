@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="864.0" prefWidth="1536.0" stylesheets="@battleshipfx.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.fhj.swengb.apps.battleship.jfx.EditScreenController">
+   <children>
+      <Region id="myRegion" layoutX="54.0" layoutY="113.0" prefHeight="716.0" prefWidth="1429.0" />
+      <GridPane id="myBattleGround" fx:id="editGridPane" alignment="CENTER" hgap="5.0" layoutX="145.0" layoutY="180.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#click" onScroll="#change" prefHeight="500.0" prefWidth="500.0" vgap="5.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="30.0" minWidth="30.0" prefWidth="30.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="NEVER" />
+         </rowConstraints>
+      </GridPane>
+      <Region id="ship5_BG" layoutX="702.0" layoutY="180.0" prefHeight="160.0" prefWidth="477.0" />
+      <Region id="ship4_BG" layoutX="702.0" layoutY="350.0" prefHeight="160.0" prefWidth="718.0" />
+      <Region id="ship3_BG" layoutX="702.0" layoutY="520.0" prefHeight="160.0" prefWidth="718.0" />
+      <Button fx:id="ship1Button" layoutX="927.0" layoutY="231.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ship1" prefHeight="60.0" prefWidth="200.0" text="Ship 1" />
+      <Button fx:id="ship2Button" layoutX="927.0" layoutY="401.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ship2" prefHeight="60.0" prefWidth="200.0" text="Ship 2" />
+      <Button fx:id="ship3Button" layoutX="1179.0" layoutY="401.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ship3" prefHeight="60.0" prefWidth="200.0" text="Ship 3" />
+      <Button fx:id="ship4Button" layoutX="927.0" layoutY="570.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ship4" prefHeight="60.0" prefWidth="200.0" text="Ship 4" />
+      <Button fx:id="ship5Button" layoutX="1179.0" layoutY="571.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ship5" prefHeight="60.0" prefWidth="200.0" text="Ship 5" />
+      <Button fx:id="readyButton" disable="true" layoutX="702.0" layoutY="714.0" mnemonicParsing="false" onAction="#ready" prefHeight="50.0" prefWidth="200.0" text="Ready">
+         <font>
+            <Font name="Chalkboard SE Regular" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="clearButton" layoutX="961.0" layoutY="714.0" mnemonicParsing="false" onAction="#clear" prefHeight="50.0" prefWidth="200.0" text="Clear">
+         <font>
+            <Font name="Chalkboard SE Regular" size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButton" layoutX="1220.0" layoutY="714.0" mnemonicParsing="false" onAction="#cancel" prefHeight="50.0" prefWidth="200.0" text="Cancel">
+         <font>
+            <Font name="Chalkboard SE Regular" size="24.0" />
+         </font>
+      </Button>
+      <Region id="ship5" layoutX="733.0" layoutY="229.0" prefHeight="63.0" prefWidth="104.0" />
+      <Region id="ship4" layoutX="733.0" layoutY="399.0" prefHeight="63.0" prefWidth="104.0" />
+      <Region id="ship3" layoutX="733.0" layoutY="569.0" prefHeight="63.0" prefWidth="104.0" />
+      <Region id="ship5_BG" layoutX="868.0" layoutY="188.0" prefHeight="146.0" prefWidth="8.0" />
+      <Region id="ship3_BG" layoutX="868.0" layoutY="528.0" prefHeight="146.0" prefWidth="8.0" />
+      <Region id="ship4_BG" layoutX="868.0" layoutY="357.0" prefHeight="146.0" prefWidth="8.0" />
+      <Region id="myRegion" layoutX="1194.0" layoutY="180.0" prefHeight="160.0" prefWidth="226.0" />
+      <TextArea editable="false" layoutX="1207.0" layoutY="193.0" prefHeight="134.0" prefWidth="200.0" text="Tip:&#10;&#10;To rotate the selected&#10;ship, simply scroll on &#10;your mouse wheel!" />
+      <Label id="battleName" layoutX="554.0" layoutY="25.0" text="Place your ships" />
+      <TextField fx:id="playerName" layoutX="145.0" layoutY="714.0" prefHeight="68.0" prefWidth="500.0" text="Player Name">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </TextField>
+   </children>
+</Pane>

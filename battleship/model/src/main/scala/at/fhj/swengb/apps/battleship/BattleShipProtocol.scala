@@ -64,8 +64,7 @@ object BattleShipProtocol {
     val game = BattleShipGame(
       convert(g.getBattlefield),
       x => x.toDouble,
-      x => x.toDouble,
-      x => ()
+      x => x.toDouble
     )
     game.clicks = convOrder
     game
@@ -77,5 +76,34 @@ object BattleShipProtocol {
 
     convOrder.map(x => pgame.addOrder(x))
     pgame.build()
+  }
+
+  //
+
+  def convert(game1: BattleShipGame, game2: BattleShipGame): BattleShipProtobuf.Games = {
+    BattleShipProtobuf.Games.newBuilder()
+      .setPlayer1Game(convert(game1))
+      .setPlayer2Game(convert(game2))
+      .setPlayer1Name(game1.player1Name)
+      .setPlayer2Name(game2.player2Name)
+      .setGameName(game1.gameName)
+      .build()
+  }
+
+  def convert(games: BattleShipProtobuf.Games): List[BattleShipGame] = {
+    val game1: BattleShipGame = convert(games.getPlayer1Game)
+    val game2: BattleShipGame = convert(games.getPlayer2Game)
+    game1.player1Name = games.getPlayer1Name
+    game2.player2Name = games.getPlayer2Name
+    game1.gameName = games.getGameName
+    List(game1, game2)
+  }
+
+  def convert(status: Boolean, ready: Boolean): BattleShipProtobuf.active = {
+    BattleShipProtobuf.active.newBuilder().setStatus(status).setReady(ready).build()
+  }
+
+  def convert(status: BattleShipProtobuf.active): List[Boolean] = {
+    List(status.getStatus, status.getReady)
   }
 }

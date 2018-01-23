@@ -6,6 +6,19 @@ option java_package         = "at.fhj.swengb.apps.battleship";
 option java_outer_classname = "BattleShipProtobuf";
 
 
+message active {
+    bool status = 1;
+    bool ready = 2;
+}
+
+message Games {
+        BattleShipGame player1Game = 1;
+        BattleShipGame player2Game = 2;
+        string player1Name = 3;
+        string player2Name = 4;
+        string gameName = 5;
+}
+
 message BattleShipGame {
     BattleField battlefield = 1;
     repeated BattlePos order = 2;

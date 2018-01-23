@@ -5,10 +5,12 @@ package at.fhj.swengb.apps.battleship.model
   */
 case class BattleShipGame(battleField: BattleField,
                           getCellWidth: Int => Double,
-                          getCellHeight: Int => Double,
-                          log: String => Unit) {
+                          getCellHeight: Int => Double) {
 
   var clicks: List[BattlePos] = List()
+  var player1Name: String = ""
+  var player2Name: String = ""
+  var gameName: String = ""
 
   /**
     * remembers which vessel was hit at which position
@@ -31,7 +33,6 @@ case class BattleShipGame(battleField: BattleField,
     BattleFxCell(BattlePos(x, y),
       getCellWidth(x),
       getCellHeight(y),
-      log,
       battleField.fleet.findByPos(pos),
       updateGameState,
       order)
@@ -40,7 +41,7 @@ case class BattleShipGame(battleField: BattleField,
   def getCells(): Seq[BattleFxCell] = cells
 
   def order(battlePos: BattlePos): List[BattlePos] = {
-    clicks = clicks :+ battlePos
+    clicks = (clicks :+ battlePos).distinct
     clicks
 
   }
@@ -53,16 +54,14 @@ case class BattleShipGame(battleField: BattleField,
       }
     }
     else {
-    for (p <- pos) {
-      val cell: BattleFxCell = cells.filter(x => x.pos.equals(p)).head
-      cell.mouseClick()
+      for (p <- pos) {
+        val cell: BattleFxCell = cells.filter(x => x.pos.equals(p)).head
+        cell.mouseClick()
       }
     }
   }
 
   def updateGameState(vessel: Vessel, pos: BattlePos): Unit = {
-    log("Vessel " + vessel.name.value + " was hit at position " + pos)
-
     if (hits.contains(vessel)) {
       // this code is executed if vessel was already hit at least once
 
@@ -80,21 +79,12 @@ case class BattleShipGame(battleField: BattleField,
 
       hits = hits.updated(vessel, oldPos + pos)
 
-      hits(vessel).foreach(p => log(p.toString))
-
       if (oldPos.contains(pos)) {
-        log("Position was triggered two times.")
       }
 
       if (vessel.occupiedPos == hits(vessel)) {
-        log(s"Ship ${vessel.name.value} was destroyed.")
         sunkShips = sunkShips + vessel
-
-        if (battleField.fleet.vessels == sunkShips) {
-          log("G A M E   totally  O V E R")
-        }
       }
-
 
     } else {
       // vessel is not part of the map

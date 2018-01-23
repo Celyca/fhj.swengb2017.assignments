@@ -1,0 +1,296 @@
+/*==================================================================================*/
+/*General Elements*/
+/*==================================================================================*/
+
+.root {
+    -fx-background-image: url("../images/water001.jpg");
+    -fx-background-size: cover;
+}
+
+@font-face {
+    /*font-family: AlphaRope;
+    src: url('AlphaRope.ttf');*/
+}
+
+.button {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    /*-fx-background-radius: 8 8 8 8;*/
+    -fx-background-image: url("../images/button_bg.png");
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+
+}
+.button:hover {
+    -fx-background-image: url("../images/button_bg.png");
+}
+.button:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+
+/*==================================================================================*/
+/* Ship Sprites & Panels*/
+/*==================================================================================*/
+
+#ship5 {
+    -fx-background-image: url("../images/ship5_left.png");
+    -fx-background-size: cover;
+    -fx-background-radius: 5px;
+}
+
+#ship5_BG {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-background-radius: 10px;
+}
+
+#ship5_my_BG {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-background-radius: 10px;
+}
+
+#ship4 {
+    -fx-background-image: url("../images/ship4_left.png");
+    -fx-background-size: cover;
+    -fx-background-radius: 5px;
+}
+
+#ship4_BG {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-background-radius: 10px;
+}
+
+#ship4_my_BG {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-background-radius: 10px;
+}
+
+#ship3 {
+    -fx-background-image: url("../images/ship3_left.png");
+    -fx-background-size: cover;
+    -fx-background-radius: 5px;
+}
+
+#ship3_BG {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-background-radius: 10px;
+}
+
+#ship3_my_BG {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-background-radius: 10px;
+}
+
+/*==================================================================================*/
+/*Text Objects*/
+/*==================================================================================*/
+
+/*GENERAL*/
+
+.label {
+    -fx-font-family: "Verdana", Times, sans-serif;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-effect: innershadow( gaussian, rgba(20, 20, 20, 0.5), 10, 0, 5, 5 );
+}
+/*NAME OF THE GAME*/
+
+.label#battleName {
+    -fx-font-size: 50px;
+    -fx-content-display: center;
+}
+
+/*NAME OF THE REPLAY*/
+
+.label#replayGameName {
+    -fx-font-size: 50px;
+    -fx-content-display: center;
+}
+
+/*NAME OF OPPONENT*/
+
+.label#opponentName {
+    -fx-font-size: 30px;
+    -fx-alignment: center-left;
+}
+
+/*NAME OF PLAYER*/
+
+.label#myName {
+    -fx-font-size: 30px;
+    -fx-alignment: center-left;
+}
+
+/*STATUS*/
+
+.label#statusLabel {
+    -fx-font-size: 30px;
+    -fx-alignment: center-left;
+    -fx-text-fill: darkgreen;
+}
+
+/*STATUS MESSAGE*/
+
+.label#statusMessage {
+    -fx-font-size: 30px;
+    -fx-alignment: center-left;
+}
+
+/*Text-Area*/
+
+.text-area {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+.text-field {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-background-radius: 10px;
+}
+
+/*Highscore Text Labels*/
+
+.label#highscoreLabel {
+    -fx-font-size: 25px;
+    -fx-alignment: center;
+}
+
+/*Highscore table-view*/
+
+.table-view{
+    -fx-background-color: transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: transparent;
+}
+
+.table-row-cell{
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: transparent;
+    -fx-background-insets: 0, 0 0 1 0;
+}
+
+
+
+/*Progress Bars*/
+
+.progress-bar > .track {
+    -fx-text-box-border: black;
+    -fx-control-inner-background: grey;
+    -fx-background-insets: 0;
+}
+
+.progress-bar .bar {
+    -fx-background-color: rgb(146, 23, 21);
+    -fx-padding: 1px;
+    -fx-background-insets: 3;
+}
+
+/*==================================================================================*/
+/*AREA PANELS*/
+/*==================================================================================*/
+
+/*GRIDPANE OPPONENT*/
+
+#enemyBattleGround {
+    -fx-background-color: transparent;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+}
+
+/*GRIDPANE PLAYER*/
+
+#myBattleGround {
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+    -fx-background-radius: 20px;
+}
+
+/*REGIONS*/
+
+#enemyRegion {
+    -fx-background-image:       url("../images/rope_left_bg.png"), url("../images/rope_top.png"), url("../images/rope_right.png"), url("../images/rope_bottom.png"),
+                                url("../images/rope_topLeft.png"), url("../images/rope_topRight.png"), url("../images/rope_bottomLeft.png"), url("../images/rope_bottomRight.png");
+    -fx-background-position:    left, top, right, bottom,
+                                left top, right top, left bottom, right bottom;
+    -fx-background-repeat:      repeat-y, repeat-x, repeat-y, repeat-x,
+                                no-repeat, no-repeat, no-repeat, no-repeat;
+}
+
+#myRegion {
+    -fx-background-image:       url("../images/rope_left_bg.png"), url("../images/rope_top.png"), url("../images/rope_right.png"), url("../images/rope_bottom.png"),
+                                url("../images/rope_topLeft.png"), url("../images/rope_topRight.png"), url("../images/rope_bottomLeft.png"), url("../images/rope_bottomRight.png");
+    -fx-background-position:    left, top, right, bottom,
+                                left top, right top, left bottom, right bottom;
+    -fx-background-repeat:      repeat-y, repeat-x, repeat-y, repeat-x,
+                                no-repeat, no-repeat, no-repeat, no-repeat;
+}
+
+#statusRegion {
+    -fx-background-image:       url("../images/rope_left_bg.png"), url("../images/rope_top.png"), url("../images/rope_right.png"), url("../images/rope_bottom.png"),
+                                url("../images/rope_topLeft.png"), url("../images/rope_topRight.png"), url("../images/rope_bottomLeft.png"), url("../images/rope_bottomRight.png");
+    -fx-background-position:    left, top, right, bottom,
+                                left top, right top, left bottom, right bottom;
+    -fx-background-repeat:      repeat-y, repeat-x, repeat-y, repeat-x,
+                                no-repeat, no-repeat, no-repeat, no-repeat;
+
+}
+
+#creditsPirate {
+    -fx-background-image: url("../images/credits_pirate.png");
+    -fx-background-size: cover;
+    -fx-padding: 10px;
+}
+
+/*==================================================================================*/
+/*SLIDER*/
+/*==================================================================================*/
+
+.slider {
+    -fx-cursor: hand;
+}
+
+.slider .thumb {
+    -fx-background-image :url("../images/ship.png");
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-padding: 20;
+    -fx-background-color: transparent;
+}
+
+.slider .track {
+    -fx-background-image :url("../images/wave.png");
+    -fx-padding: 8;
+    -fx-background-color: transparent;
+}
+
+.slider .axis {
+    -fx-tick-label-fill: black;
+    -fx-tick-label-font-size: 1em;
+}
