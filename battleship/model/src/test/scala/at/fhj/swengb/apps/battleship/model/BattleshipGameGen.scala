@@ -35,8 +35,7 @@ object BattleshipGameGen {
     val game = BattleShipGame(
       battlefield,
       x => x.toDouble,
-      x => x.toDouble,
-      x => ()
+      x => x.toDouble
     )
     game.clicks = clickedPos
     game
