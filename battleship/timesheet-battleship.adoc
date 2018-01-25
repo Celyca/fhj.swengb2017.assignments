@@ -1,4 +1,4 @@
-== Time expenditure: battleship assignment
+== Time expenditure: BattleShip Project – Team KTV
 
 [cols="1,1,1, 1,4", options="header"]
 .Time expenditure
@@ -9,71 +9,300 @@
 | Actual Hours
 | Description
 
-| Rauchens16
-| 21.12.17
+| Krnavkov16
+| 11.01.2018
+| 1
+| 3
+| Writing Project-Report
+
+| Krnavkov16
+| 12.01.2018
+| 4
+| 8
+| Writing Project-Report
+
+| Huetters16
+| 12.01.2018
 | 2
+| 8
+| Drawing Mockups
+
+| Rauchens16
+| 12.01.2018
+| 1
+| 1
+| Decision about the multiplayer implementation
+
+| Lachchri16
+| 12.01.2018
+| 1
+| 2
+| Decisions about the Design
+
+| Krnavkov16
+| 13.01.2018
+| 1
 | 3
-| Review of the homework
+| Finishing Project Report
 
-| Rauchens16
-| 21.12.17
-| 4
+| Huetters16
+| 13.01.2018
+| 1
+| 1
+| Finishing Mockups
+
+| Huetters16
+| 13.01.2018
+| 1
 | 3
-| Implement .proto
+| Creating basic .fxml files
 
-| Rauchens16
-| 21.11.17
-| 4
-| 4
-| Implement converter (BattleShipProtocol)
+| Krnavkov16
+| 13.01.2018
+| 2
+| 5
+| Writing GUI Controller
 
-| Rauchens16
-| 25.12.17
+| Lachchri16
+| 14.01.2018
 | 4
 | 5
-| Finished load/save
+| Starting GUI Design, CSS
+
+| Krnavkov16
+| 14.01.2018
+| 2
+| 2
+| Starting CSS Design
+
+| Huetters16
+| 14.01.2018
+| 2
+| 2
+| Thinking about Design Decisions
+
 
 | Rauchens16
-| 27.12.17
+| 14.01.2018
+| 1
+| 2
+| Writing Protobuff, adjusting to synchronisation
+
+| Rauchens16
+| 14.01.2018
+| 2
+| 2
+| Writing Protobuff Converter
+
+
+| Rauchens16
+| 15.01.2018
+| 4
 | 6
+| Implementing Watch Service
+
+| Rauchens16
+| 16.01.2018
+| 1
+| 3
+| Solving Multithreading Problem - Watch Service
+
+| Rauchens16
+| 17.01.2018
+| 1
+| 1
+| Writing GameScreen Watch Service
+
+|Rauchens16
+| 17.01.2018
+| 1
+| 4
+| Writing Edit Screen Watch Service
+
+
+| Lachchri16
+| 17.01.2018
+| 1
+| 1
+| Welcome Screen – Button Functions
+
+| Krnavkov16
+| 17.01.2018
+| 1
+| 1
+| High Score Screen – GUI Programming – button functions
+
+| Rauchens16
+| 18.01.2018
+| 6
+| 6
+| Highscore Screen – starting to implement TableView
+
+| Lachchri1
+| 18.01.2018
+| 2
+| 2
+| Research about CSV files
+
+| Huetters16
+| 18.01.2018
+| 1
+| 1
+| Game Screen GUI  programming – button functions
+
+| Rauchens16
+|19.01.2018
+| 1
+| 1
+| implementing TableView
+
+| Lachchri16
+| 19.01.2018
+| 1
+| 1
+| implementing TableView
+
+| Lachchri16
+| 19.01.2018
+| 2
+| 2
+| implementing CSV-Reader
+
+| Rauchens16
+| 19.01.2018
+| 2
+| 2
+| Reading Data from Edit Screen
+
+| Rauchens16
+| 19.01.2018
+| 1
+| 1
+| Game information exchange
+
+
+| Lachchri16
+| 19.01.2018
+| 3
+| 3
+| Join Game Function
+
+| Krnavkov16
+| 19.01.2018
+| 3
+| 3
+| Start Game Function
+
+| Lachchri16
+| 20.01.2018
+| 2
+| 2
+| Function to create the name
+
+| Lachchri16
+| 20.01.2018
+| 1
+| 3
+| Scene & Stage Control
+
+| Huetters16
+| 20.01.2018
+| 1
 | 5
-| Finished slider
+| CASE CLASS EditGame, FxCell
 
-| Lachchri16
-| 21.12.17
+| Rauchens16
+| 20.01.2018
+| 1
 | 2
+| GameSync – Battlefiled Exchange
+
+| Huetters16
+| 21.01.2018
+| 2
+| 4
+| GUI Programming
+
+| Lachchri16
+| 21.01.2018
+| 1
 | 3
-| Review of the homework
+| Implementing Round-Based Progress-Bar
 
-| Lachchri16
-| 21.12.17
-| 4
+| Krnavkov16
+| 21.01.2018
+| 1
 | 3
-| Implement .proto
+| Implementing Round-Based Progress-Bar
+
+| Huetters16
+| 21.01.2018
+| 1
+| 4
+| Implementing Game-Over function
+
+| Huetters16
+| 21.01.2018
+| 1
+| 1
+| Credits Screen – GUI Programming – Button Functions
+
+| Huetters16
+| 22.01.2018
+| 1
+| 2
+| BattleShipFxApp - Media Player
+
+| Rauchens16
+| 22.01.2018
+| 1
+| 4
+| Preloader
+
+
+| Krnavkov16
+| 22.01.2018
+| 1
+| 2
+| Replay Screen – Load Function, Slider
+
+
+|Huetters16
+| 22.01.2018
+|1
+|1
+| Replay Screen – GUI Programming – Button Functions
+
+
+|Krnavkov16
+| 22.01.2018
+| 1
+| 3
+| GUI Design – CSS
 
 | Lachchri16
-| 21.12.17
-| 4
-| 4
-| Implement converter (BattleShipProtocol)
+| 22.01.2018
+| 1
+| 3
+| GUI Design – CSS + Photoshop
 
-| Lachchri16
-| 25.12.17
-| 4
+|Lachchri16
+| 22.01.2018
 | 5
-| Finished design (css / fxml)
+| 8
+| FXMLs
 
-| Lachchri16
-| 28.12.17
-| 2
-| 2
-| history (slider / Button)
+| Huetters16
+| 23.01.2018
+| 1
+| 3
+| GUI Design - CSS
 
-| Lachchri16
-| 28.12.17
-| 3
-| 3
-| Testing and bug fixing
+| Krnavkov16
+| 23.01.2018
+| 1
+| 2
+| Manual
 
 
 
